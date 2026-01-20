@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #f4f8fb;
+}
+.main {
+    display: flex;
+    align-items: center;
+    background-color: #0a6ebd;
+    padding: 12px 30px;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius:50px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.nav nav {
+    display: flex;
+}
+.nav nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
