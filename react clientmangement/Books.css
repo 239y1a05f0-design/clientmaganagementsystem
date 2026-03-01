@@ -1,0 +1,153 @@
+/* Page background */
+.books {
+  padding: 30px;
+  background: linear-gradient(135deg, #b1ecbb, #fda085);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.books h2 {
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+/* Cart info */
+.books p {
+  text-align: center;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* Book grid */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+/* Book card */
+.book-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Book image */
+.book-card img {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Book title */
+.book-card h4 {
+  color: #6c5ce7;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Author & price */
+.book-card p {
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* ---------- BOOK DETAILS ---------- */
+.book-details {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Details image */
+.book-details img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Details title */
+.book-details h3 {
+  text-align: center;
+  color: #d63031;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* Details text */
+.book-details p {
+  font-size: 16px;
+  color: #2d3436;
+  text-align: center;
+  margin: 6px 0;
+}
+
+/* Buttons */
+.book-details button {
+  margin: 15px 10px 0;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Add to cart button */
+.book-details button:first-of-type {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  color: white;
+}
+
+.book-details button:first-of-type:hover {
+  background: linear-gradient(135deg, #019875, #00b3a4);
+  transform: scale(1.05);
+}
+
+/* Close button */
+.book-details button:last-of-type {
+  background: linear-gradient(135deg, #d63031, #ff7675);
+  color: white;
+}
+
+.book-details button:last-of-type:hover {
+  background: linear-gradient(135deg, #c0392b, #ff6b6b);
+  transform: scale(1.05);
+}
